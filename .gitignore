@@ -1,75 +1,72 @@
 # ========================
+# 构建输出（Maven / Gradle）
+# ========================
+target/
+build/
+out/
+
+# ========================
+# 日志文件
+# ========================
+*.log
+
+# ========================
+# 编译文件
+# ========================
+*.class
+
+# ========================
+# 包文件
+# ========================
+*.jar
+*.war
+*.ear
+
+# ========================
+# 操作系统文件
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
 # IntelliJ IDEA
 # ========================
 .idea/
 *.iws
 *.iml
 *.ipr
-out/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries/
+.idea/**/shelf/
 
-# IDE 生成的工作区文件
-*.class
-*.log
+# ========================
+# Eclipse
+# ========================
+.classpath
+.project
+.settings/
+
+# ========================
+# VS Code (可选)
+# ========================
+.vscode/
+
+# ========================
+# 临时 & 备份文件
+# ========================
 *.tmp
-
-# IntelliJ 构建输出
-/.idea/
-/*.iml
-/modules.xml
-/.idea_modules/
-workspace.xml
-tasks.xml
-usage.statistics.xml
-shelf/
-compiler.xml
-encodings.xml
-*.swp
-
-# ========================
-# OS 系统文件
-# ========================
-.DS_Store
-Thumbs.db
-
-# ========================
-# Maven
-# ========================
-/target/
-
-# ========================
-# Logs
-# ========================
-*.log
-
-# ========================
-# Others
-# ========================
 *.bak
+*.swp
 *.old
 *.orig
 
 # ========================
-# Java
+# AWS、密钥、隐私文件（如有）
 # ========================
-*.class
-*.jar
-*.war
-*.ear
-
-# ========================
-# JetBrains 全家桶（兼容 IDEA / WebStorm / PyCharm 等）
-# ========================
-# User-specific stuff:
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
-
-# AWS credentials
 *.aws
-
-# ========================
-# Git 忽略自身配置（防止多人冲突）
-# ========================
-!.gitignore
+*.pem
+*.key
+*.env
+.env.*
